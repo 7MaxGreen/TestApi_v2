@@ -52,7 +52,6 @@ export const Dates = () => {
                  
                 <div className="container">
                 <h3>Zone 1</h3>      
-                    <br />
                     {data.filter(item => item.areaId === 1791 && item.joinedWith === 2861 || item.id === 2861)
                     .map(item => <div className="item"><p>{item.sku}</p>  <small>{item.defaultSku} </small></div>)}
                     <hr />
@@ -87,8 +86,8 @@ export const Dates = () => {
                 <h3>Zone 5</h3>      
                     {data.filter(item => item.areaId === 1901).map(item => <div className="item"><p>{item.sku}</p>  <small>{item.defaultSku}</small></div>)}
                 </div>  
-                
-            </div>
+                </div>            
+            
 
     )
 }
